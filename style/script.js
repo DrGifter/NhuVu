@@ -776,6 +776,7 @@ function preloadGalaxyAudio() {
   galaxyAudio = new Audio(selectedSrc);
   galaxyAudio.loop = true;
   galaxyAudio.volume = 1.0;
+  galaxyAudio.currentTime = 68;
 
   galaxyAudio.preload = "auto";
 }
@@ -1226,3 +1227,4 @@ window.addEventListener('resize', checkOrientation);
 window.addEventListener('orientationchange', () => {
   setTimeout(checkOrientation, 200);
 });
+
